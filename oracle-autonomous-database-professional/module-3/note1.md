@@ -1,5 +1,3 @@
----
-
 # 📘 Oracle Autonomous Database: Dedicated Infrastructure
 
 **Instructor:** Linda Foinding
