@@ -132,7 +132,3 @@ Allow group DBAdmins to manage database-family in compartment FinanceApps
 | Scaling and automation via OCI     | ✔️     |
 
 Exadata Database Service gives full control to the customer inside guest VMs while Oracle ensures reliable infrastructure below the surface.
-
-```
-Would you like to continue with the next section, or compile this documentation into a complete file? I can export it to Markdown, PDF, or Notion if you'd like.
-```
