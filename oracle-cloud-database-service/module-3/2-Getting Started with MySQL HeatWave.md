@@ -93,40 +93,47 @@ To allow client connections:
    mysqlsh --uri admin@<MySQL-endpoint-IP>
    ```
 
-🖥️ Option 2: MySQL Workbench (via SSH Tunnel)
-Configure connection using:
+### 🖥️ Option 2: MySQL Workbench (via SSH Tunnel)
 
-SSH Hostname: Public IP of compute instance
+To connect to your MySQL HeatWave database using **MySQL Workbench** over SSH:
 
-SSH Username: opc
+**Configuration settings:**
 
-SSH Key File: Path to private SSH key
+| Setting            | Value                                       |
+|--------------------|---------------------------------------------|
+| **SSH Hostname**    | Public IP of your compute instance          |
+| **SSH Username**    | `opc`                                       |
+| **SSH Key File**    | Path to your SSH private key                |
+| **MySQL Hostname**  | Private IP of the MySQL HeatWave instance   |
+| **MySQL Port**      | `3306` (MySQL Classic) or `33060` (X Protocol) |
+| **Username**        | Your admin user                             |
+| **Password**        | Admin user password                         |
 
-MySQL Hostname: Private IP of HeatWave DB
+👉 Use the **Standard TCP/IP over SSH** connection method.
 
-MySQL Port: 3306 (or 33060)
+---
 
-Username/Password: Admin credentials
+### 📦 Test with Sakila Sample Database
 
-Use Standard TCP/IP over SSH method
+To test and validate your MySQL HeatWave setup, you can load the **Sakila** sample database, which includes:
 
-📦 Test with Sakila Sample Database
-Use the Sakila database to explore features like:
+- ✅ Views  
+- ✅ Stored procedures  
+- ✅ Triggers  
 
-Views
+This is an excellent resource for practicing and evaluating MySQL features.
 
-Stored procedures
+---
 
-Triggers
+### 📘 Summary
 
-Great for learning and validating your setup
-
-📘 Summary
 In this module, you learned how to:
 
-✅ Set up the OCI networking and security environment
-✅ Provision a MySQL HeatWave DB system
-✅ Launch and configure a compute instance as a jump box
-✅ Connect using MySQL Shell or Workbench
-✅ Apply VCN security rules for safe access
-✅ Load and test with sample data like Sakila
+- ✅ Set up the **OCI networking and security** environment  
+- ✅ Provision a **MySQL HeatWave DB system**  
+- ✅ Launch and configure a **compute instance** (bastion host)  
+- ✅ Connect using **MySQL Shell** or **MySQL Workbench**  
+- ✅ Apply **VCN security rules** for safe and secure access  
+- ✅ Load and test with **sample data like Sakila**
+
+You're now ready to work with MySQL HeatWave on Oracle Cloud! 🚀
